@@ -1,0 +1,255 @@
+.sbd-table {
+  width: 100%;
+  float: left;
+  display: table;
+  color: $fontColorLv3;
+  border: 1px solid $borderColorLv3;
+  border-radius: $borderRadiusLv1;
+  overflow: hidden;
+
+  .sbd-row {
+    width: 100%;
+    display: table-row;
+    background: white;
+    transition: all linear .1s;
+
+    &:hover {
+      background: $hoverBackgroundColor;
+    }
+
+    &:last-child {
+
+      .cell {
+        border-bottom: none;
+      }
+    }
+
+    .cell {
+      padding: 10px 15px;
+      display: table-cell;
+      border-left: 1px solid $borderColorLv3;
+      border-bottom: 1px solid $borderColorLv3;
+      overflow: hidden;
+      font-size: 0.75rem;
+
+      a {
+        font-weight: 500;
+
+        i:before {
+          color: $fontColorLv4;
+          margin-right: 8px;
+        }
+      }
+
+      &:first-child {
+        text-align: left;
+        border-left: none;
+      }
+
+      &:last-child {
+        text-align: right;
+      }
+
+      i:before {
+        vertical-align: middle;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      img {
+        max-height: 34px;
+        max-width: 34px;
+      }
+
+      .img-table {
+        max-width: 80px
+      }
+
+      .img-large {
+        max-width: 90px;
+        max-height: 90px;
+        border: 1px solid $borderColorLv2;
+      }
+    }
+
+    .cw-50 {
+      width: 55px;
+    }
+
+    .cw-70 {
+      width: 70px;
+    }
+
+    .cw-90 {
+      width: 90px;
+    }
+
+    .cw-140 {
+      width: 140px;
+    }
+
+    .cw-160 {
+      width: 160px;
+    }
+
+    .cw-180 {
+      width: 180px;
+    }
+
+    .cw-200 {
+      width: 200px;
+    }
+
+    .cw-240 {
+      width: 240px;
+    }
+
+    .cw-280 {
+      width: 280px;
+    }
+
+    &:last-child {
+
+      .cell {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .sbd-row-hidden {
+    filter: grayscale(90%);
+  }
+
+  .sbd-row-highlight {
+    background: $highlightBackgroundColor;
+  }
+
+  .sbd-row-active {
+    color: $orange;
+
+    a {
+      color: $orange;
+    }
+  }
+
+  .header {
+    font-weight: 500;
+    background: $headerTableBackground;
+
+    &:hover {
+      background: $headerTableBackground;;
+    }
+
+    .cell {
+      font-size: 0.75rem;
+      padding: 14px 15px;
+      border-left: 1px solid $borderColorLv3;
+
+      i {
+        float: right;
+        line-height: 18px;
+
+        &:before {
+          font-size: 0.75rem;
+          color: $fontColorLv5;
+          padding: 0 4px;
+          vertical-align: auto;
+        }
+      }
+
+      .i-sort-up:before {
+        color: $green;
+      }
+
+      .i-sort-down:before {
+        color: $red;
+      }
+    }
+  }
+}
+
+.sbd-table-light {
+  .sbd-row .cell {
+    border-left: 1px solid $borderColorLv4;
+    border-bottom: 1px solid $borderColorLv4;
+  }
+}
+
+.sbd-table-no-content {
+  padding: 14px 15px;
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: $fontColorLv5;
+  border: 1px solid $borderColorLv3;
+  border-radius: $borderRadiusLv1;
+}
+
+.real-table {
+  border: 1px solid $borderColorLv3;
+
+  .fix-row {
+    border-bottom: 1px solid $borderColorLv3;
+
+    td {
+      padding: 5px 10px;
+      height: 33px;
+      z-index: 500;
+      position: relative;
+
+      div {
+        position: absolute;
+        width: 100%;
+        z-index: 550;
+        left: -1px;
+        bottom: -1px;
+        height: 33px;
+        line-height: 33px;
+        overflow: hidden;
+        float: left;
+        transition: all linear .2s;
+        font-size: 0.75rem;
+        border: 1px solid white;
+
+        &:hover {
+          @extend .box-shadow;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+
+  .sbd-table .sbd-row .cell-14 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .sbd-table .sbd-row .cell-12 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .sbd-table .sbd-row .cell-9 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .sbd-table .sbd-row .cell-7 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .sbd-table .sbd-row .cell-5 {
+    display: none;
+  }
+}

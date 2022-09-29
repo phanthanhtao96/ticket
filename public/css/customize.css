@@ -1,0 +1,42 @@
+.select2-container {
+    width: 80% !important;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid #37333342 1px !important;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+    display: block !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    padding-left: 5px !important;
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#ticket-form .error {
+    color: red;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+    padding: 0 !important;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    background-color: #f4030373 !important;
+    color: white;
+    float: right;
+    height: 30px!important;
+    display: block;
+    line-height: 25px!important;
+    transform: translateY(-9px) translateX(93px);
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    display: none;
+}

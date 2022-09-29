@@ -1,0 +1,122 @@
+input, button, select, textarea {
+  font-size: 0.75rem !important;
+  max-width: 520px;
+  border: 1px solid $borderColorLv3 !important;
+  padding: 5px 20px !important;
+  height: unset !important;
+  word-break: break-word;
+}
+
+input[type=text], input[type=email], input[type=phone], input[type=number], input[type=date], input[type=time], input[type=password], select, textarea {
+  background-color: #f1f1f1 !important;
+}
+
+button svg {
+  width: 14px;
+  margin-right: 5px;
+}
+
+textarea {
+  min-height: 82px;
+  resize: none;
+}
+
+select {
+  padding-right: 30px !important;
+}
+
+::placeholder {
+  color: $fontColorLv5 !important;
+  opacity: 1;
+}
+
+input:disabled, input:read-only, textarea:disabled, textarea:read-only, select:disabled {
+  background-color: #f1f1f1 !important;
+  color: $fontColorLv5 !important;
+}
+
+.main-button {
+  background: $mainColor;
+  border: 1px solid $mainColorDark !important;
+  color: white;
+
+  &:hover {
+    background: $mainColorLight;
+    color: white;
+  }
+}
+
+.checkbox-list {
+  width: 100%;
+  max-width: 520px;
+  float: left;
+  margin-top: 10px;
+
+  .check-row, .check-row-100 {
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+    label {
+      color: $gray;
+    }
+  }
+
+  .check-row-100 {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 992px) {
+    .check-row {
+      width: 100%;
+    }
+  }
+}
+
+.checkbox-list-2 {
+  width: 100%;
+  margin-top: 10px;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+
+  .check-row {
+    flex: 0 0 250px;
+    float: left;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+    label {
+      color: $gray;
+    }
+  }
+}
+
+.same-width {
+  width: 100%;
+  float: left;
+  max-width: 520px;
+}
+
+.datetime-input-wrap {
+  width: calc(100% + 4px);
+  max-width: 524px;
+  float: left;
+  margin: 0 -2px;
+
+  .input-wrap {
+    float: left;
+    width: 50%;
+    padding: 0 2px;
+  }
+
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+
+    .input-wrap {
+      width: 100%;
+      margin-bottom: 2px;
+    }
+  }
+}

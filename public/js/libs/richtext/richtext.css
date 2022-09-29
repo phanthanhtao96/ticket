@@ -1,0 +1,284 @@
+.richText {
+    font-family: Roboto;
+    position: relative;
+    background-color: #FAFAFA;
+    border: #EFEFEF solid 1px;
+    color: #333333;
+    width: 100%;
+    font-size: 14px;
+}
+
+.richText .richText-form {
+    font-family: Roboto;
+}
+
+.richText .richText-form label {
+    display: block;
+    padding: 10px 15px;
+}
+
+.richText .richText-form input[type="text"], .richText .richText-form input[type="file"], .richText .richText-form input[type="number"], .richText .richText-form select {
+    padding: 10px 15px;
+    border: #999999 solid 1px;
+    min-width: 200px;
+    width: 100%;
+}
+
+.richText .richText-form select {
+    cursor: pointer;
+}
+
+.richText .richText-form button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #3498db;
+    border: none;
+    color: #FAFAFA;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.richText .richText-toolbar {
+    min-height: 20px;
+    border-bottom: #EFEFEF solid 1px;
+}
+
+.richText .richText-toolbar ul li {
+    float: left;
+    display: block;
+    list-style: none;
+}
+
+.richText .richText-toolbar ul li a {
+    color: #888;
+    display: block;
+    padding: 10px 15px;
+    border-right: #EFEFEF solid 1px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.richText .richText-toolbar ul li a:hover {
+    color: #ea6153;
+}
+
+.richText .richText-toolbar ul li a .fa, .richText .richText-toolbar ul li a .fas, .richText .richText-toolbar ul li a .far, .richText .richText-toolbar ul li a svg {
+    pointer-events: none;
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer .richText-dropdown {
+    position: relative;
+    display: block;
+    margin: 3% auto 0 auto;
+    background-color: #FAFAFA;
+    border: #EFEFEF solid 1px;
+    min-width: 100px;
+    width: 300px;
+    max-width: 90%;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer .richText-dropdown .richText-dropdown-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer ul.richText-dropdown {
+    list-style: none;
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer ul.richText-dropdown li {
+    display: block;
+    float: none;
+    font-family: Roboto;
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer ul.richText-dropdown li a {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: #EFEFEF solid 1px;
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer ul.richText-dropdown li a:hover {
+    background-color: #FFFFFF;
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer ul.richText-dropdown li.inline {
+    margin: 10px 6px;
+    float: left;
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer ul.richText-dropdown li.inline a {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer ul.richText-dropdown li.inline a span {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ccc;
+}
+
+.richText .richText-toolbar ul li a .richText-dropdown-outer {
+    padding: 30px 15px 10px 15px;
+}
+
+.richText-dropdown {
+    padding: 30px 15px 10px 15px;
+}
+
+.richText .richText-toolbar ul li a:hover {
+    background-color: #FFFFFF;
+}
+
+.richText .richText-toolbar ul li[data-disable="true"] {
+    opacity: 0.1;
+}
+
+.richText .richText-toolbar ul li[data-disable="true"] a {
+    cursor: default;
+}
+
+.richText .richText-toolbar ul li:not([data-disable="true"]).is-selected .richText-dropdown-outer {
+    display: block;
+}
+
+.richText .richText-toolbar ul:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.richText .richText-toolbar:last-child {
+    font-size: 12px;
+}
+
+.richText .richText-toolbar:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.richText .richText-editor {
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-left: #FFFFFF solid 2px;
+    font-family: Roboto;
+    height: 500px;
+    outline: none;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+.richText .richText-editor ul, .richText .richText-editor ol {
+    margin: 10px 25px;
+}
+
+.richText .richText-editor table {
+    margin: 10px 0;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.richText .richText-editor table td, .richText .richText-editor table th {
+    padding: 10px;
+    border: #EFEFEF solid 1px;
+}
+
+.richText .richText-editor:focus {
+    border-left: #e96052 solid 2px;
+}
+
+.richText .richText-initial {
+    margin-bottom: -4px;
+    padding: 10px;
+    background-color: #232525;
+    border: none;
+    color: #ffc66d;
+    font-family: Roboto;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    min-height: 500px;
+    height: 500px;
+}
+
+.richText .richText-initial:hover {
+    border: none !important;
+    background-color: #232525 !important;
+}
+
+.richText .richText-initial:focus {
+    border: none !important;
+    background-color: #232525 !important;
+}
+
+.richText .richText-help {
+    float: right;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.richText .richText-undo, .richText .richText-redo {
+    float: left;
+    display: block;
+    padding: 10px 15px;
+    border-right: #EFEFEF solid 1px;
+    cursor: pointer;
+}
+
+.richText .richText-undo.is-disabled, .richText .richText-redo.is-disabled {
+    opacity: 0.4;
+}
+
+.richText .richText-help-popup a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.richText .richText-help-popup hr {
+    margin: 10px auto 5px auto;
+    border: none;
+    border-top: #EFEFEF solid 1px;
+}
+
+.richText .richText-list.list-rightclick {
+    position: absolute;
+    background-color: #FAFAFA;
+    border-right: #EFEFEF solid 1px;
+    border-bottom: #EFEFEF solid 1px;
+}
+
+.richText .richText-list.list-rightclick li {
+    padding: 5px 7px;
+    cursor: pointer;
+    list-style: none;
+}

@@ -1,0 +1,212 @@
+.card {
+  font-size: 0.8125rem;
+  border: 1px solid $borderColorLv3;
+
+  .card-header {
+    border-bottom: 1px solid rgba(170, 170, 170, .125);
+    font-weight: 500;
+  }
+
+  .card-footer {
+    border-top: none;
+    background: none;
+  }
+
+  h2 {
+    font-size: 1rem !important;
+    display: inline;
+  }
+}
+
+.modal {
+  font-size: 0.8125rem;
+
+  .modal-header {
+    border-bottom: 1px solid rgba(170, 170, 170, .125);
+    font-weight: 500;
+
+    h5 {
+      font-weight: 500 !important;
+    }
+  }
+
+  .modal-body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background: $backgroundColor;
+  }
+
+  .modal-footer {
+    border-top: none;
+  }
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+.alert {
+  font-size: 0.8125rem;
+  text-align: left;
+
+  svg {
+    margin-right: 8px !important;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 15px;
+  }
+}
+
+.custom-control-inline {
+  margin-right: 25px !important;
+}
+
+.page-link {
+  border: 1px solid $borderColorLv3;
+  color: $fontColorLv3 !important;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 0.8125rem;
+}
+
+.btn-light, .btn-light:focus {
+  color: $fontColorLv3;
+  background: white;
+
+  &:disabled {
+    background: white;
+    color: $fontColorLv5;
+  }
+
+  &:hover {
+    background: $backgroundColor;
+  }
+}
+
+.close {
+  border: none !important;
+  font-size: 1.5rem !important;
+}
+
+.input-group-text {
+  font-size: 0.8125rem;
+}
+
+.input-group-prepend-70 {
+  .input-group-text {
+    min-width: 70px;
+  }
+}
+
+.list-group-item {
+  border: 1px solid rgba(170, 170, 170, .125);
+}
+
+.pagination {
+  float: left;
+  @extend .shadow-2;
+
+  .active span {
+    background: $mainColor !important;
+    border-color: $mainColor !important;
+    color: white !important;
+  }
+}
+
+.badge {
+  vertical-align: middle;
+  font-size: 0.6875rem;
+}
+
+.b-form-btn-label-control {
+  border: 1px solid $borderColorLv3 !important;
+}
+
+.media-body {
+  h5 {
+    font-size: 0.875rem !important;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.popover {
+  font-family: Roboto;
+  font-size: 0.8125rem;
+  border: 1px solid $borderColorLv3;
+  line-height: 22px;
+  color: $fontColorLv3;
+
+  .popover-header {
+    font-size: 0.875rem;
+  }
+
+  .popover-body {
+    color: $fontColorLv4;
+  }
+}
+
+.dropdown-menu {
+  font-size: 0.875rem;
+}
+
+.alert {
+  margin-top: 2px;
+  position: relative;
+  background-color: white;
+  color: $fontColorLv4;
+  border-radius: 0;
+  border: 1px solid $borderColorLv3;
+  border-left: 4px solid $gray;
+}
+
+.alert-danger {
+  border-left: 4px solid $red;
+}
+
+.alert-success {
+  border-left: 4px solid $green;
+}
+
+.alert-warning {
+  border-left: 4px solid $yellow;
+}
+
+.alert-info {
+  border-left: 4px solid $teal;
+}
+
+.alert-primary {
+  border-left: 4px solid $blue;
+}
+
+.bg-light {
+  background-color: #fbfbfb !important;
+}
+
+.rating-lg {
+  background: none;
+  border: none;
+}
+
+.b-rating-icon {
+  color: $mainColor;
+}
+
+.badge {
+  padding: 4px 8px !important;
+}
+
+.input-group-text {
+  border: 1px solid $borderColorLv3 !important;
+}
